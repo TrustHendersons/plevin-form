@@ -1,0 +1,265 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+
+  h1 {
+    @apply text-2xl;
+  }
+  h2 {
+    @apply text-xl;
+  }
+
+  body {
+    background: #eeeeee; 
+  }
+
+  p {
+    margin-bottom: 1rem;
+  }
+
+  a {
+    color: #7BAE7A;
+  }
+
+  p.errors {
+    color: #EDAE49;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+
+    display: flex;
+    margin-bottom: 0;
+  }
+
+}
+
+header.brand  {
+  color: #EEEEEE;
+  background: #4b4b4b;
+  padding: 0.5rem 0 0.5rem 0;
+  margin-bottom: 3rem;
+}
+
+.steps {
+  margin-right: 1rem;
+  padding: 1rem;
+  float: left;
+  border: 1px solid #3b3b3b;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+
+  color: #394053;
+  background: #EDAE49;
+}
+
+
+/*--- sticky footer ---*/
+#gatsby-focus-wrapper, #___gatsby {
+  display: flex;
+  flex-direction: column;  
+  height: 100vh;
+
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+header {
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.section-start {
+  color: #cdcdcd;
+  background: #394053;
+
+  padding: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+}  
+
+.section-grey {
+  background: #cdcdcd;
+
+  padding: 2rem;
+  margin: 0;
+
+}  
+
+.section-blue {
+  background: #394053;
+
+  padding: 4rem 2rem;
+  margin: 0;
+
+}  
+
+.section-blue h1 {
+  color: #EDAE49;
+}  
+
+.section-yellow {
+  background: #EDAE49;
+
+  padding: 4rem 2rem;
+  margin: 0;
+
+}  
+
+.section-yellow h1 {
+  color: #394053;
+}  
+
+
+
+
+
+.subfooter {
+  color: #eee;
+  background: #7BAE7A;
+  padding: 2rem;
+}
+
+.subfooter p {
+  margin: 0;
+}
+
+
+footer {
+  color: #eee;
+  background: #394053;
+  padding: 2rem;
+
+  font-weight: 100;
+}
+
+
+/* type */
+
+h1, h2, h3, h4 {
+  font-family: circe, sans-serif;
+  font-weight: 800;
+  font-style: normal; 
+}
+
+
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #C6C6C6;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #C6C6C6;
+}
+
+progress {
+  width: 100%;
+  height: 10px;
+  color: #cdcdcd;
+  margin-bottom: 1rem;
+}
+
+progress::-webkit-progress-bar {
+  background-color: #cdcdcd;
+}
+progress::-webkit-progress-value {
+  background-color: #EDAE49;
+}
+
+/*--form --*/
+
+.form-group input, .form-group select {
+  width: 100%;
+  border-radius: 5px;
+}
+
+/*-- Checkbox style --*/
+
+label {
+  position:relative;   
+  cursor:pointer;
+}
+label [type="checkbox"] {
+  display:none;
+}
+[type="checkbox"] + span {
+  display:inline-block;
+  width: 100%;
+  padding:1em;
+  background: #394053;
+  color: #EDAE49;
+  border: 1px solid #394053;
+  border-radius: 5px;
+}
+:checked + span {
+  background: #EDAE49;
+  color: #394053;
+  display:inline-block;  
+  border: 1px solid #394053;
+}
+[type="checkbox"][disabled] + span {
+  background:#e0dede;  
+}
+
+/*--  --*/
+
+.idpc-select {
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.idpc-input {
+  margin-top: 1.8rem;
+  width: auto;
+}
+
+
+/*-- lists --*/
+
+ol {
+  counter-reset: item;
+}
+
+ol > li {
+  counter-increment: item;
+}
+
+ol ol > li {
+  display: block;
+}
+
+ol ol > li:before {
+  content: counters(item, ".") ". ";
+  margin-left: -20px;
+}
+
+@layer components {
+    .btn-blue {
+      @apply w-1/3 py-2 px-4 m-2 bg-blue-500 text-white font-semibold rounded-md shadow-md hover:bg-blue-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-green-700 focus:ring-opacity-75;
+    }
+
+    .idpc-button {
+      @apply py-2 px-4 mt-2 mx-auto bg-blue-500 text-white font-semibold rounded-md hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-700 focus:ring-opacity-75;
+    }    
+
+    .btn-green {
+        @apply w-1/3 py-4 px-4 m-2 bg-green-500 text-white font-semibold rounded-md shadow-md hover:bg-green-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-green-700 focus:ring-opacity-75;
+      }   
+      
+    .btn-start {
+        @apply block py-2 px-8 my-2 bg-green-500 text-white font-semibold rounded-md shadow-md hover:bg-green-200 hover:text-white focus:outline-none focus:ring-2 focus:ring-green-700 focus:ring-opacity-75;
+      }   
+
+    .section {
+      @apply p-4 md:p-12 mx-4 mb-16 bg-gray-50 text-gray-500;
+    }
+
+    .section-form {
+      @apply px-2 py-2 md:px-6 md:py-6 mx-4 mb-16 bg-gray-50 text-gray-500 rounded-md;
+    }
+  }
