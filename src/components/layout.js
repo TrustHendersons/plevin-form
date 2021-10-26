@@ -71,7 +71,7 @@ const Layout = ({ children }) => {
             </div>
 
             <hr className="my-4"/>
-            <p className="text-xs text-center">Hendersons is a trading style of Henderson Claims Limited. Henderson Claims Limited is authorised and regulated by the Financial Conduct Authority with reference number FRN:836041. Henderson Claims Limited is a Claims Management Company (CMC). Registered with the Information Commissioners Office: registration number ZA147049. Registered address: Unit 2, Ashbrook Office Park, Manchester, M22 5LB. Registered in England and Wales, Company number 7646017. VAT number: 240 8769 88.</p>
+            <p className="text-xs text-center">Hendersons is a trading style of Henderson Claims Limited. Henderson Claims Limited is authorised and regulated by the Financial Conduct Authority with reference number FRN:836041. Henderson Claims Limited is a Claims Management Company (CMC). Registered with the Information Commissioners Office: registration number ZA147049. Registered address: Unit 2, Ashbrook Office Park, Manchester, M22 5LB. Registered in England and Wales, Company number 07646017. VAT number: 240 8769 88.</p>
           </div>
       </footer>
     </>

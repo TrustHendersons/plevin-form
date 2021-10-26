@@ -18,7 +18,7 @@ const ThanksPage = () => {
 
               <p>Our expert team will now begin checking whether you may be due a refund.  </p>
 
-              <p>Please keep an eye out for the relevant documentation that we will send you either by email or post in the next 7 days.  We may also contact you by telephone to obtain further information if required and should you have any questions at any time, please do not hesitate to contact us on 0161 510 0600 or <a href="mailto:hello@plevin-claims.com">hello@plevin-claims.com</a></p>
+              <p>Please keep an eye out for the relevant documentation that we will send you either by email or post in the next 7 days.  We may also contact you by telephone to obtain further information if required and should you have any questions at any time, please do not hesitate to contact us on 0161 359 7140 or <a href="mailto:contact@trusthendersons.co.uk">contact@trusthendersons.co.uk</a></p>
           </section>  
       </div>
     </div>
